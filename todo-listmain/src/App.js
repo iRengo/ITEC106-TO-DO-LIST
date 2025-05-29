@@ -52,7 +52,7 @@ function App() {
       </div>
 
       <div className="flex justify-center items-center h-[calc(100vh-80px)] px-6">
-        <div className="flex w-full max-w-5xl bg-[#22376C] rounded-xl p-10 shadow-lg backdrop-blur-md">
+        <div className="flex flex-col md:flex-row w-full max-w-5xl bg-[#22376C] rounded-xl p-6 md:p-10 shadow-lg backdrop-blur-md">
 
           <div className="flex-1 text-white pr-6">
             <h2 className="text-2xl font-bold mb-8 font-poppins ml-2">TODO-LIST</h2>
@@ -113,9 +113,9 @@ function App() {
             </div>
           </div>
 
-          <div className="flex-1 flex justify-center items-center">
-            <img src={noteImage} alt="Note" className="max-w-full w-[90%] h-auto" />
-          </div>
+          <div className="hidden md:flex flex-1 justify-center items-center">
+  <img src={noteImage} alt="Note" className="max-w-full w-[90%] h-auto" />
+</div>
         </div>
       </div>
     </div>
